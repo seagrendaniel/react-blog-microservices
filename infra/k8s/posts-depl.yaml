@@ -7,11 +7,11 @@ spec:
   selector: 
     matchLabels:
       app: posts
-  template:
+  template:  # describes the templates by which the pods should be created
     metadata:
       labels:
         app: posts
     spec:
       containers:
         - name: posts
-          image: seagrendaniel/posts:0.0.5
+          image: seagrendaniel/posts:latest
